@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #242233;
+}
+
+.clock {
+    width: min(100vw, 100vh);
+    height: min(100vw, 100vh);
+    margin: 0 auto;
+    background-color:  #ffffff;
+    border-radius: 50%;
+    border: 15px#000000 solid;
+    position: relative;
+    box-shadow: inset 0 0 25px #000000;
+}
+
+.anchor {
+    position: absolute;
+    width: 3%;
+    height: 3%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: #000000 solid 4px;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hand {
+    position: absolute;
+    transform-origin: 50% 90%;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #000000;
+    box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.6);
+    border: white solid 1px;
+}
+
+.minutes-hand {
+    height: 46%;
+    width: 2%;
+}
+
+.hours-hand {
+    height: 35%;
+    width: 2%;
+}
+
+.seconds-hand {
+    height: 47%;
+    width: 1%;
+    background-color: #ff0000;
+}
+
+.clock > h1 {
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.dot {
+    position: absolute;
+    width: 0.75%;
+    height: 2%;
+    background-color: #000000;
+    border-radius: 45%;
+}
+
+.dot:nth-child(5n) {
+    width: 1.5%;
+    height: 4%;
+}
